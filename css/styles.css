@@ -6,7 +6,10 @@
     --card-item-gap: 30px;
     --section-padding-gap: 94px;
     --title-margin-bottom: 50px;
+    --header-items-gap: 50px;
+    --portfolio-filter-btn-gap: 8px;
 }
+
 
 .visually-hidden {
     position: absolute;
@@ -65,6 +68,7 @@ img {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    margin-right: 94px;
 
 }
 
@@ -89,15 +93,13 @@ body {
 
 /* ------------HEADER-------------- */
 
+
 .site-nav {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-
 }
-
-.site-nav>site-nav-item {}
 
 .header-link {
     color: #212121;
@@ -120,6 +122,10 @@ body {
     font-size: 14px;
     line-height: 1.42;
     letter-spacing: 0.02em;
+}
+
+.contact:not(:last-child) {
+    margin-right: var(--header-items-gap);
 }
 
 .site-nav a:hover,
@@ -151,7 +157,8 @@ body {
 }
 
 .header,
-.heder-logo,
+.header-logo-nav-container,
+.header-logo,
 .site-nav,
 .site-nav-item,
 .header-contact,
@@ -159,22 +166,26 @@ body {
     display: flex;
 }
 
-/*-----
-.header-logo {
+.header-logo-nav-container {
+    flex-basis: 45%;
+    align-items: center;
+}
+
+.header-nav-container {
     margin-left: auto;
 }
 
-
+.site-nav-item:not(:last-child) {
+    margin-right: var(--header-items-gap);
+}
 
 .header-contact {
-    display: flex;
+    margin-left: auto;
 }
 
-.link .contact {
-    margin-right: auto;
-    display: flex;
+.contact:not(:last-child) {
+    margin-right: var(--header-items-gap)
 }
------------*/
 
 /*----------------main----------------------*/
 
@@ -241,6 +252,14 @@ body {
     color: var(--white);
 }
 
+.portfolio-btn {
+    outline: 1px solid red;
+}
+
+.portfolio-cards {
+    outline: 1px solid red;
+}
+
 .text {
     color: var(--secendery-text-color);
 }
@@ -271,17 +290,6 @@ body {
 }
 
 /*-----------card set containewr-----*/
-.section-container {
-    width: 100%;
-    max-width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    outline: 1px solid red;
-
-}
-
 .card-set {
     padding: 0;
     margin: 0;
@@ -417,4 +425,41 @@ footer .list {
 .footer-contact:hover,
 .footer-contact:focus {
     color: var(--accent-color);
+}
+
+
+/*----------portfolio-------------*/
+
+.project-card-set {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--card-item-gap));
+    margin-top: calc(-1 * var(--card-item-gap));
+    outline: 1px solid red;
+}
+
+.project-card-set>.project-list {
+    flex-basis: calc(100% / 3 - var(--card-item-gap));
+    margin-left: var(--card-item-gap);
+    margin-top: var(--card-item-gap);
+    outline: 1px solid red;
+}
+
+.btn-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+}
+
+.btn-list>.item-btn:not(:last-child) {
+    margin-right: var(--portfolio-filter-btn-gap);
+    outline: 1px solid red;
+    border-radius: 10px;
+
 }
