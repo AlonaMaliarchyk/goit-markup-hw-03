@@ -8,6 +8,9 @@
     --title-margin-bottom: 50px;
     --header-items-gap: 50px;
     --portfolio-filter-btn-gap: 8px;
+    --team-padding-gap: 30px;
+    --project-padding: 20px;
+    --project-padding-left: 24px;
 }
 
 
@@ -148,7 +151,6 @@ body {
     padding-right: 15px;
     margin-right: auto;
     margin-left: auto;
-    outline: 1px solid red;
 }
 
 .header {
@@ -212,6 +214,8 @@ body {
     text-transform: uppercase;
     min-width: 696px;
     margin-bottom: 30px;
+    padding: 10px 32px;
+
 }
 
 .hero-button {
@@ -223,7 +227,9 @@ body {
     line-height: 1.87;
     letter-spacing: 0.06em;
     min-width: 216px;
-    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 1px solid transparent;
 }
 
 .hero-button:hover {
@@ -244,7 +250,13 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     font-family: inherit;
+    border-radius: 4px;
+    padding: 6px 22px;
+    min-width: 125px;
+    display: inline-block;
+    border: 1px solid transparent;
 }
+
 
 .btn:hover,
 .btn:focus {
@@ -253,12 +265,9 @@ body {
 }
 
 .portfolio-btn {
-    outline: 1px solid red;
+    margin-bottom: 34px;
 }
 
-.portfolio-cards {
-    outline: 1px solid red;
-}
 
 .text {
     color: var(--secendery-text-color);
@@ -280,6 +289,7 @@ body {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .benefits-list .text {
@@ -298,14 +308,12 @@ body {
     flex-wrap: wrap;
     margin-left: calc(-1 * var(--card-item-gap));
     margin-top: calc(-1 * var(--card-item-gap));
-    outline: 1px solid red;
 }
 
 .card-set>.benefit-item {
     flex-basis: calc(100% / 4 - var(--card-item-gap));
     margin-left: var(--card-item-gap);
     margin-top: var(--card-item-gap);
-    outline: 1px solid red;
 }
 
 .text-centered {
@@ -313,10 +321,11 @@ body {
 }
 
 .card-set>.team-item {
-    outline: 1px solid red;
     flex-basis: calc(100% / 4 - var(--card-item-gap));
     margin-left: var(--card-item-gap);
     margin-top: var(--card-item-gap);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .card-set>.work-item {
@@ -351,6 +360,9 @@ body {
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
+    padding-top: var(--team-padding-gap);
+    margin-bottom: 10px;
+
 }
 
 .team .text {
@@ -358,6 +370,7 @@ body {
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
+    padding-bottom: var(--team-padding-gap);
 }
 
 .project-list .title {
@@ -365,12 +378,17 @@ body {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    padding-top: var(--project-padding);
+    margin-bottom: 4px;
+    padding-left: var(--project-padding-left);
 }
 
 .project-list .text {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
+    padding-bottom: var(--project-padding);
+    padding-left: var(--project-padding-left);
 }
 
 /*------------------footer--------------*/
@@ -438,14 +456,13 @@ footer .list {
     flex-wrap: wrap;
     margin-left: calc(-1 * var(--card-item-gap));
     margin-top: calc(-1 * var(--card-item-gap));
-    outline: 1px solid red;
 }
 
 .project-card-set>.project-list {
     flex-basis: calc(100% / 3 - var(--card-item-gap));
     margin-left: var(--card-item-gap);
     margin-top: var(--card-item-gap);
-    outline: 1px solid red;
+    border: 1px solid #EEEEEE;
 }
 
 .btn-list {
@@ -459,7 +476,8 @@ footer .list {
 
 .btn-list>.item-btn:not(:last-child) {
     margin-right: var(--portfolio-filter-btn-gap);
-    outline: 1px solid red;
-    border-radius: 10px;
+}
 
+.bottom {
+    padding-bottom: var(--section-padding-gap);
 }
