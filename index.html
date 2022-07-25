@@ -8,7 +8,7 @@
     <link />
     <title>WebStudio</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -121,8 +121,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team title">Игорь Демьяненко</h3>
-              <p class="team text">Product Designer</p>
+              <div class="padding-team">
+                <h3 class="team title">Игорь Демьяненко</h3>
+                <p class="team text">Product Designer</p>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -131,8 +133,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team title">Ольга Репина</h3>
-              <p class="team text">Frontend Developer</p>
+              <div class="padding-team">
+                <h3 class="team title">Ольга Репина</h3>
+                <p class="team text">Frontend Developer</p>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -141,8 +145,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team title">Николай Тарасов</h3>
-              <p class="team text">Marketing</p>
+              <div class="padding-team">
+                <h3 class="team title">Николай Тарасов</h3>
+                <p class="team text">Marketing</p>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -151,8 +157,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team title">Михаил Ермаков</h3>
-              <p class="team text">UI Designer</p>
+              <div class="padding-team">
+                <h3 class="team title">Михаил Ермаков</h3>
+                <p class="team text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -162,33 +170,29 @@
     <footer class="footer">
       <!--Адресс-->
       <div class="container">
-        <div class="footer-padding">
-          <div class="footer-logo-container">
-            <a lang="en" href="./index.html" class="footer-logo link">
-              <span class="footer-color">Web</span>Studio
-            </a>
-          </div>
-          <address class="contacts-address">
-            <ul class="footer list">
-              <li>
-                <a
-                  class="footer-address link"
-                  href="https://goo.gl/maps/D4AeKFE9MHxPDFGb8"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                >
-                  г. Киев, пр-т Леси Украинки, 26
-                </a>
-              </li>
-              <li>
-                <a class="footer-contact link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li><a class="footer-contact link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
-          </address>
+        <div class="footer-logo-container">
+          <a lang="en" href="./index.html" class="footer-logo link">
+            <span class="footer-color">Web</span>Studio
+          </a>
         </div>
+        <address class="contacts-address">
+          <ul class="footer-contact list">
+            <li class="contact-margin">
+              <a
+                class="footer-address link"
+                href="https://goo.gl/maps/D4AeKFE9MHxPDFGb8"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                г. Киев, пр-т Леси Украинки, 26
+              </a>
+            </li>
+            <li class="contact-margin">
+              <a class="footer-contact link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li><a class="footer-contact link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          </ul>
+        </address>
       </div>
     </footer>
   </body>
